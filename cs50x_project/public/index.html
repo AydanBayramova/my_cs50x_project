@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../ccccc/cs50.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/DZBA372XBVM2mXfr9d2owcRBDQ6Xn4v3ZWemspVsfg9F8VBo0wi1ZaCHQWN9HIp-9w" type="image/x-icon">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/DZBA372XBVM2mXfr9d2owcRBDQ6Xn4v3ZWemspVsfg9F8VBo0wi1ZaCHQWN9HIp-9w" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    body{
+        background-image: url(	https://www.million.az/assets/img/bg-gray.svg);
+    }
+    .nav{
+        max-width: auto;
+        margin: -15px auto;
+        
+      }
+      
+      nav {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: rgb(210 30 30);
+        height: 70px;
+        z-index: 9999;
+        margin-left: -8px;
+      }
+      
+      nav ul {
+     list-style: none;
+     
+      }
+    
+    
+      nav ul li {
+        display: inline-block;
+        margin: 10px 10px;
+        position: relative;
+      }
+      nav ul li::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: #fff;
+      }
+      nav ul li:hover::after {
+        width: 100%;
+        transition: 0.5s ease-in-out;
+      } 
+       nav a:hover {
+        color: rgb(0, 0, 0);
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+    
+     
+      .section{
+        max-width: 1540px;
+        margin: 0 auto;
+      }
+      .section_divs{
+        display: flex;
+        margin:0px auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      .section_div{
+        
+        width: 47%;
+      }
+      .section_div .span{
+        margin: 190px 40px;
+      }
+      .section_div span{
+        font-size: 60px;
+        line-height: 72px;
+        font-weight: 700;
+      }
+      .section_div .span p{
+        color: #64748b;
+        font-size: 18px;
+        line-height: 36px;
+        margin-top: -10px;
+      }
+      .section_div .span b{
+        color: red;
+        cursor: pointer;}
+        .logo{
+  margin-top: -150px;
+  margin-left: 30px;
+ }
+  .logo img{
+    object-fit: cover;
+    max-width: 140px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+   .logo_section{
+    display: flex;
+   }
+   .logo_section .logo_qr {
+    background-color: #fff;
+    box-shadow: 0 4px 70px rgba(0, 0, 0, 0.22);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: none;
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+  }
+  .logo_qr img{ 
+    width: 100%;
+    height: 100%;
+  }
+  
+  .logo_section:hover  .logo_qr  {
+    transition: 0.4s ease-in-out;
+    transform: translate3d(0, -106%, 0);
+    opacity: 1;
+  }
+  .common{
+    display: flex;
+    flex-direction: row;
+    gap: -5px;
+  }
+      .mobil_img{
+        width: 650px;
+      
+      }
+      .mobil_img img{
+        width: 100%;
+        object-fit: cover;
+        margin-top: 90px;
+      }
+    .payment{
+        height: 400px;
+        max-width: 1540px;
+        margin:120px auto;
+        background-color: rgb(207 207 207 / 14%);
+    }
+    .payment h2{
+        text-align: center;
+      
+    }
+    .payment_divs{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1300px;
+        margin: 10px auto;
+        gap:20px
+    
+    }
+    .payment_div{
+        width: 25%;
+        height: 200px;
+        border: 1px solid rgb(159, 159, 159);
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 1px 3px 7px 2px #aba8a8;
+        cursor: pointer;
+    }
+    .payment_div a{
+        text-decoration: none;
+    }
+    .payment_div:hover{
+        box-shadow: 1px 3px 7px 2px #db0101;
+    }
+    .payment_div:hover p{
+        color: #db0101;
+    }
+    .payment_div:hover img{
+        transition: .3 ease-in-out;
+      
+        height: 80px;
+    }
+    .payment h2{
+        font-size: 25px;
+       padding: 40px;
+    }
+    .payment_div img{
+        max-width: 100px;
+        height: 60px;
+        align-items: center;
+        margin-left: 120px;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+    .payment_div p{
+        text-align: center;
+        padding: 5px;
+        font-size: 14px;
+        font-family:Arial, Helvetica, sans-serif;
+        color: #000;
+        font-weight:bold;
+        cursor: pointer;
+    
+    }
+    .about{
+        max-width: 1540px;
+        margin:120px auto;
+       background-color: #fadede40;
+       height: 500px;
+       border: none;
+        
+    }
+    .about h2,h3{
+        text-align: center;
+    }
+    .about h3{
+        padding-top: 50px;
+        font-weight: 700px;
+        color: #db0101;
+        cursor: pointer;
+    }
+    .about h2{
+        font-size: 24px;
+        line-height: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .about_divs{
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+        gap:40px;
+        flex-wrap: wrap;
+        flex-direction:row;
+        max-width: 1300px;
+        margin: 60px auto;
+    
+    }
+    .about_div{
+     width: 35%;
+     height: 100px;
+     cursor: pointer;
+     display: flex;
+     border-radius: 10px;
+    }
+    .about_div:hover{
+        border: 1px solid rgb(207, 207, 207);
+        box-shadow: 1px 3px 7px 2px #8c8c8c;
+        transition: 0.2s ease-in-out;
+    }
+    .about_div .about_div_a{
+        width: 50px;
+        height: 50px;
+        background-color: #f0f0ff;
+        border-radius: 10px;
+        margin: 10px 10px;
+       
+    }
+    .about_div .about_div_a1{
+        width: 50px;
+        height: 50px;
+        background-color: #faeed5;
+        border-radius: 10px;
+        margin: 10px 10px;
+       
+    }
+    .about_div .about_div_b{
+        margin: -14px 12px;
+    }
+    .about_div_b .div_p{
+    
+        width: 320px;
+        color: #64748b;
+    }
+    .div_p p{
+        margin: -10px 0px;
+        text-align: center;
+    }
+    .about_div .about_div_a2{
+        width: 50px;
+        height: 50px;
+        background-color:  #fef1f0;
+        border-radius: 10px;
+        margin: 10px 10px;
+       
+    }
+    .about_div_b h2{
+        color: #1c1e31;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    .about_div .about_div_a3{
+        width: 50px;
+        height: 50px;
+        background-color: #ddf8e6;
+        border-radius: 10px;
+        margin: 10px 10px;
+       
+    }
+    .banner{
+        max-width: 1540px;
+        margin:40px auto;
+         
+    }
+    .banner_divs{
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+       
+        flex-wrap: wrap;
+        flex-direction:row;
+        max-width: 1300px;
+        margin: 60px auto;
+    
+    }
+    .banner_div img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .banner_div{
+        width: 49%;
+        height: 700px;
+    
+    }
+    
+    .banner_div h2{
+       margin-top: 145px;
+        font-size: 60px;
+        line-height: 72px;
+        font-weight: 700;
+    }
+    .banner_div p{
+        color: #64748b;
+        font-size: 22px;
+        line-height: 36px;
+    }
+    
+    footer{
+        background-color:#f0f0f0;
+    }
+    .footer1{
+        margin-left: -10px;
+        margin-right: -8px;
+        width: auto;
+        padding: 70px, 30px, 20px;
+        height: 170px;
+        background: url(https://plataformaurbana.cepal.org/sites/default/files/styles/full_width_image/public/media/images/node%3Acontent-type%3Amachine-name/2020-08/urban-economy-and-municipal-finances.png?h=27343a61&itok=Fy6dVzzD);
+        margin-bottom: -45px;
+    }
+    .sonluq{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-left: 740px;
+        margin-top: 3px;
+    }
+    .sosialmedya{
+        margin-left: 30px;
+        display: flex;
+        justify-content: left;
+    }
+    .sosialmedya a{
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    .sosialmedya a i{
+        font-size: 2em;
+        color:#ed2c2c;
+        opacity: 0.9;
+    }
+    .sosialmedya a :hover {
+        color:#000;
+        transition:0.5s;
+    }
+    .sosialmedya a :hover i{
+        color:#ed2c2c;
+        transition: 0.5s;
+    }
+    h2{
+        margin-left: 50px;
+        margin: 20px;
+        padding-top: 23px;}
+    
+   </style>
+</head>
+<body>
+    <header>
+     <div class="nav">  
+         <nav>
+        <ul>
+          <li id="home">
+            <a href="{% url 'home' %}">Ana səhifə</a>
+          </li>
+          <li><a href="{% url 'info' %}">Haqqımızda</a></li>
+          <li><a href="{% url 'map' %}">Terminal xəritəsi</a></li>
+        </ul>
+        </nav></div>
+    </header>
+    <main>
+        <section> 
+            <div class="section">
+                <div class="section_divs">
+                    <div class="section_div"><div class="span">
+                        <span>Ödənişlərinizi <b>MilliOn</b> ilə idarə edin!</span>
+                    <p> Sürətli, təhlükəsiz və sərfəli ödənişlər üçün Million istifadə edin.</p>
+                    </div>
+                    <div class="common">
+                        <div class="logo_section"><div class="logo_qr"><img src="../ccccc/Million.png">
+                        </div>
+                          <div class="logo">  <img class="logo1" src="	https://mpay.az/img/google_play.19e0efd1.png"></div>
+                        </div>
+                        <div class="logo_section" style="margin-left: -18px;"><div class="logo_qr"><img src="../ccccc/Million.png">
+                        </div>
+                          <div class="logo">  <img class="logo1" src="https://mpay.az/img/app_store.b82e2cc4.png"></div>
+                        </div>
+                        <div class="logo_section" style="margin-left: -18px;"><div class="logo_qr"><img src="../ccccc/Million.png">
+                        </div>
+                          <div class="logo">  <img class="logo1" src="https://mpay.az/img/app_gallery.f2c9dacd.png"></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="section_div">
+                        <div class="mobil_img"><img src="https://mpay.az/img/main.b90efa55.png"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="payment"><h2>Ödənişlər</h2>
+           <div class="payment_divs">
+            <a href="{% url 'hesap_girisi' %}" class="payment_div" ><img src="https://api.million.az/media/million/services/1562574699_26672_kommunal_new.svg " ><p>Kommunal xidmət</p></a>
+            <a href="{% url 'bank' %}" class="payment_div"><img src="	https://api.million.az/media/million/services/1562587515_716292_bankciliq.svg"><p >Bank xidmətləri</p></a>
+            <a href="{% url 'mobil' %}" class="payment_div"><img src="	https://api.million.az/media/million/services/1562588277_862868_mobil.svg"><p >Mobil operatorlar</p></a>
+            <a href="{% url 'telefon' %}" class="payment_div"><img src="	https://api.million.az/media/million/services/1562588317_1977866_telefon.svg"><p>Telefon</p></a>
+           </div>
+            </div>
+       
+
+        <div class="about"><h3>Niyə Million</h3><h2>Üstünlüklərimiz</h2>
+            <div class="about_divs">
+                <div class="about_div"><div class="about_div_a"></div>
+                <div class="about_div_b"><h2>Komissiyasız ödənişlər</h2>
+                <div class="div_p"> <p>Bir çox xidmət üzrə komissiyasız ödənişlərdən yararlanın</p></div>
+                </div>
+            </div>
+            <div class="about_div"><div class="about_div_a1"></div>
+            <div class="about_div_b"><h2>Yüzlərlə xidmət</h2>
+            <div class="div_p"> <p>17 kateqoriyada 600-dən çox xidməti rahatlıqla ödəyin</p></div>
+            </div>
+        </div>
+        <div class="about_div"><div class="about_div_a2"></div>
+        <div class="about_div_b"><h2>Sadə və rahat interfeysr</h2>
+        <div class="div_p"> <p> Sadə və rahat anlaşılan tətbiqimizlə xidmətinizdəyik.</p></div>
+        </div>
+    </div>
+    <div class="about_div"><div class="about_div_a3"></div>
+    <div class="about_div_b"><h2>Komissiyasız ödənişlər</h2>
+    <div class="div_p"> <p>Bir çox xidmət üzrə komissiyasız ödənişlərdən yararlanın</p></div>
+    </div>
+</div>
+            </div>
+        </div>
+      <div class="banner">
+        <div class="banner_divs">
+            <div class="banner_div"><img src="https://mpay.az/img/transfer.be70798e.png"></div>
+            <div class="banner_div"><h2>Pul köçürmələri asan olmalıdır</h2><p>Alan istifadəçini kontakt siyahısından seçin, məbləği daxil edib göndərin. Bu qədər sadə! </p></div>
+        </div>
+      </div>
+
+        </section>
+        <footer>
+       
+            <div class="footer1"><h2>Bizimlə əlaqə üçün</h2>
+                <div class="sosialmedya">
+                   
+                    <a href="https://www.facebook.com/milli0n.az"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/milli0n.az/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://apps.apple.com/az/app/milli%C3%B6n/id1456249791"><i class="fa-brands fa-app-store"></i></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.safaroff.million_android&pli=1"><i class="fa-brands fa-google-play"></i></a>
+                    
+                    
+                </div>
+                <div class="footerbottom">
+                    <p class="sonluq">
+                        Bütün hüquqlar qorunur 2023 © MilliÖn
+                    </p>
+                </div>
+            
+     </footer>
+   
+</body>
+</html>
